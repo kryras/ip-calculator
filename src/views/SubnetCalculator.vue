@@ -162,8 +162,8 @@
 
 <script>
 // eslint-disable-next-line no-unused-vars
-import SubnetHostAddress from "./../js/SubnetHostAddress.js";
-import FileSaver from "./../js/FileSaver.js";
+import SubnetHostAddress from "@/js/SubnetHostAddress.js";
+import FileSaver from "@/js/FileSaver.js";
 export default {
   name: "SubnetCalculator",
   data() {
@@ -181,8 +181,8 @@ export default {
       sha: null,
       subnetList: [
         { key: "255.255.0.0 /16", value: [255, 255, 0, 0], bits: 16 },
-        { key: "255.255.192.0 /18", value: [255, 255, 192, 0], bits: 17 },
-        { key: "255.255.128.0 /17", value: [255, 255, 128, 0], bits: 18 },
+        { key: "255.255.128.0 /17", value: [255, 255, 128, 0], bits: 17 },
+        { key: "255.255.192.0 /18", value: [255, 255, 192, 0], bits: 18 },
         { key: "255.255.224.0 /19", value: [255, 255, 224, 0], bits: 19 },
         { key: "255.255.240.0 /20", value: [255, 255, 240, 0], bits: 20 },
         { key: "255.255.248.0 /21", value: [255, 255, 248, 0], bits: 21 },

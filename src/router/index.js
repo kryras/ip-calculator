@@ -8,17 +8,12 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Ip Calculator",
-    component: IpCalculator
-  },
-  {
-    path: "/ip-calc",
-    name: "Ip Calculator",
+    name: "IP Calculator",
     component: IpCalculator
   },
   {
     path: "/subnet-calc",
-    name: "Subnet calculator",
+    name: "Subnet Calculator",
     component: SubnetCalculator
   }
 ];

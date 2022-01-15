@@ -9,10 +9,10 @@
       </div>
       <div id="nav">
         <ul>
-          <router-link to="/ip-calc">
+          <router-link :to="{ name: 'IP Calculator' }">
             <li>OBLICZANIE ADRESÓW IP</li>
           </router-link>
-          <router-link to="/subnet-calc">
+          <router-link :to="{ name: 'Subnet Calculator' }">
             <li>PODZIAŁ NA PODSIECI</li>
           </router-link>
         </ul>
@@ -48,14 +48,14 @@ export default {
   name: "App",
   data() {
     return {
-      checked: false
+      checked: false,
     };
   },
   watch: {
-    checked: function() {
+    checked: function () {
       this.$store.dispatch("changeState");
-    }
-  }
+    },
+  },
 };
 </script>
 

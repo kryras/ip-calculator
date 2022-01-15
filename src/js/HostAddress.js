@@ -5,8 +5,8 @@ export default class HostAddress {
     this.netmask = netmask;
     this.subnetList = [
       { key: "255.255.0.0 /16", value: [255, 255, 0, 0], bits: 16 },
-      { key: "255.255.192.0 /18", value: [255, 255, 192, 0], bits: 17 },
-      { key: "255.255.128.0 /17", value: [255, 255, 128, 0], bits: 18 },
+      { key: "255.255.128.0 /17", value: [255, 255, 128, 0], bits: 17 },
+      { key: "255.255.192.0 /18", value: [255, 255, 192, 0], bits: 18 },
       { key: "255.255.224.0 /19", value: [255, 255, 224, 0], bits: 19 },
       { key: "255.255.240.0 /20", value: [255, 255, 240, 0], bits: 20 },
       { key: "255.255.248.0 /21", value: [255, 255, 248, 0], bits: 21 },
@@ -22,7 +22,7 @@ export default class HostAddress {
     ];
   }
 
-  caclulateNetworkAddress(ipAddress, netmaskAddress) {
+  calculateNetworkAddress(ipAddress, netmaskAddress) {
     if (
       ipAddress === undefined ||
       netmaskAddress === undefined ||
@@ -53,7 +53,7 @@ export default class HostAddress {
     }
   }
 
-  caclulateBroadcastAddress(ipAddress, netmaskAddress) {
+  calculateBroadcastAddress(ipAddress, netmaskAddress) {
     var replaceChars = { "0": "1", "1": "0" };
     if (
       ipAddress === undefined ||

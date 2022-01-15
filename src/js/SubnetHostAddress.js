@@ -54,13 +54,13 @@ export default class SubnetHostAddress extends HostAddress {
         ip = [...this.ip];
       }
       subnetClass.network = [];
-      subnetClass.network = this.caclulateNetworkAddress(
+      subnetClass.network = this.calculateNetworkAddress(
         ip,
         subnetClass.subnetMask
       );
 
       subnetClass.broadcast = [];
-      subnetClass.broadcast = this.caclulateBroadcastAddress(
+      subnetClass.broadcast = this.calculateBroadcastAddress(
         ip,
         subnetClass.subnetMask
       );

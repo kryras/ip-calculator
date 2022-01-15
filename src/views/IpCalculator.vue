@@ -75,8 +75,8 @@
 </template>
 
 <script>
-import HostAddress from "./../js/HostAddress.js";
-import FileSaver from "./../js/FileSaver.js";
+import HostAddress from "@/js/HostAddress.js";
+import FileSaver from "@/js/FileSaver.js";
 export default {
   name: "IpCalculator",
   data() {
@@ -112,8 +112,8 @@ export default {
   methods: {
     calculate() {
       var hostAddress = new HostAddress(this.ip, this.mask);
-      this.network = hostAddress.caclulateNetworkAddress();
-      this.broadcast = hostAddress.caclulateBroadcastAddress();
+      this.network = hostAddress.calculateNetworkAddress();
+      this.broadcast = hostAddress.calculateBroadcastAddress();
       this.hostMinimum = hostAddress.calculateHostMin();
       this.hostMaximum = hostAddress.calculateHostMax();
       this.hostsTotal = hostAddress.calculateNumberOfHosts();
