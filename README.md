@@ -15,3 +15,8 @@ npm install
 ```
 npm run electron:serve
 ```
+
+### Build
+```
+npm run electron:build
+```
